@@ -15,6 +15,7 @@ add_library(
     baremetal_core
     STATIC
 
+    src/shell/parser.cpp
     src/shell/shell.cpp
 )
 

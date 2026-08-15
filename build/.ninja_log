@@ -4,3 +4,11 @@
 234	319	1786830128904175155	libbaremetal_core.a	96bb426dd779bff8
 2	322	1786830128669173903	CMakeFiles/baremetal_cli.dir/standalone/main.cpp.o	ad6e47b823df3e4a
 322	404	1786830128989175601	baremetal_cli	6ec928d588337f36
+2	44	1786830685637130512	build.ninja	b86d5a12c9e4ed89
+2	44	1786830685637130512	/home/baremetal/Desktop/hl_baremetal/mod_prototype/build/cmake_install.cmake	b86d5a12c9e4ed89
+3	348	1786830685649457272	CMakeFiles/baremetal_core.dir/src/shell/shell.cpp.o	382477b19e4197c0
+5	384	1786830685650130581	CMakeFiles/baremetal_cli.dir/src/io/console_terminal.cpp.o	34fad845f3799c39
+3	394	1786830685650051329	CMakeFiles/baremetal_cli.dir/standalone/main.cpp.o	ad6e47b823df3e4a
+2	430	1786830685648130571	CMakeFiles/baremetal_core.dir/src/shell/parser.cpp.o	6d5495c888805856
+430	492	1786830686076132843	libbaremetal_core.a	296a9c4d84246746
+492	575	1786830686138133172	baremetal_cli	6ec928d588337f36

@@ -1,5 +1,7 @@
 #pragma once
 
+#include "baremetal/shell/parser.hpp"
+
 #include <string>
 
 namespace baremetal
@@ -22,11 +24,12 @@ public:
     // Display the initial system banner.
     void printBanner();
 
-    // Execute a single line submitted to the shell.
+    // Parse and execute one line of shell input.
     ShellAction executeLine(const std::string& input);
 
 private:
-    Terminal& terminal_;
+    Terminal& terminal;
+    CommandParser parser;
 };
 
 }

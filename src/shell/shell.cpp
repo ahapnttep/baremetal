@@ -6,54 +6,56 @@ namespace baremetal
 {
 
 Shell::Shell(Terminal& terminal)
-    : terminal_(terminal)
+    : terminal(terminal)
 {
 }
 
 void Shell::printBanner()
 {
-    terminal_.writeLine("BAREMETAL SYSTEM 0.0.1");
-    terminal_.writeLine("Type 'help' for available commands.");
-    terminal_.writeLine("");
+    terminal.writeLine("BAREMETAL SYSTEM 0.0.1");
+    terminal.writeLine("Type 'help' for available commands.");
+    terminal.writeLine("");
 }
 
 ShellAction Shell::executeLine(const std::string& input)
 {
-    if (input.empty())
+    const ParsedCommand command = parser.parse(input);
+
+    if (command.name.empty())
     {
         return ShellAction::Continue;
     }
 
-    if (input == "help")
+    if (command.name == "help")
     {
-        terminal_.writeLine("Built-in commands:");
-        terminal_.writeLine("  help");
-        terminal_.writeLine("  version");
-        terminal_.writeLine("  clear");
-        terminal_.writeLine("  exit");
+        terminal.writeLine("Built-in commands:");
+        terminal.writeLine("  help");
+        terminal.writeLine("  version");
+        terminal.writeLine("  clear");
+        terminal.writeLine("  exit");
 
         return ShellAction::Continue;
     }
 
-    if (input == "version")
+    if (command.name == "version")
     {
-        terminal_.writeLine("BAREMETAL SYSTEM 0.0.1");
+        terminal.writeLine("BAREMETAL SYSTEM 0.0.1");
         return ShellAction::Continue;
     }
 
-    if (input == "clear")
+    if (command.name == "clear")
     {
-        terminal_.clear();
+        terminal.clear();
         return ShellAction::Continue;
     }
 
-    if (input == "exit")
+    if (command.name == "exit")
     {
         return ShellAction::Exit;
     }
 
-    terminal_.write("Unknown command: ");
-    terminal_.writeLine(input);
+    terminal.write("Unknown command: ");
+    terminal.writeLine(command.name);
 
     return ShellAction::Continue;
 }
