@@ -1,0 +1,6 @@
+# ninja log v7
+1	233	1786830128668173898	CMakeFiles/baremetal_core.dir/src/shell/shell.cpp.o	382477b19e4197c0
+2	280	1786830128670056717	CMakeFiles/baremetal_cli.dir/src/io/console_terminal.cpp.o	34fad845f3799c39
+234	319	1786830128904175155	libbaremetal_core.a	96bb426dd779bff8
+2	322	1786830128669173903	CMakeFiles/baremetal_cli.dir/standalone/main.cpp.o	ad6e47b823df3e4a
+322	404	1786830128989175601	baremetal_cli	6ec928d588337f36

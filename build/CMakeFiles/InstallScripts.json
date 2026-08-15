@@ -1,0 +1,7 @@
+{
+	"InstallScripts" : 
+	[
+		"/home/baremetal/Desktop/hl_baremetal/mod_prototype/build/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

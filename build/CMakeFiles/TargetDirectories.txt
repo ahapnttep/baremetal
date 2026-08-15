@@ -1,0 +1,4 @@
+/home/baremetal/Desktop/hl_baremetal/mod_prototype/build/CMakeFiles/baremetal_core.dir
+/home/baremetal/Desktop/hl_baremetal/mod_prototype/build/CMakeFiles/baremetal_cli.dir
+/home/baremetal/Desktop/hl_baremetal/mod_prototype/build/CMakeFiles/edit_cache.dir
+/home/baremetal/Desktop/hl_baremetal/mod_prototype/build/CMakeFiles/rebuild_cache.dir
